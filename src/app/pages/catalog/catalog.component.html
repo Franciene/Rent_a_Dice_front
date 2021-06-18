@@ -11,7 +11,7 @@
                 <img [src]="product.image" width="255px" height="277px">
                 <p class="text-title">{{product.name}}</p>
                 <p class="text-info">{{product.desc}}</p>
-                <button class="more" routerLink="/product/123">Saiba mais</button>
+                <button class="more" [routerLink]="['/product/', product._id]" >Saiba mais</button>
             </div>
         </div>
     </div>

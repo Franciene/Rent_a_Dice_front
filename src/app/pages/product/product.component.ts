@@ -12,7 +12,7 @@ export class ProductComponent implements OnInit {
 
   game : any;
   productId : any;
-  constructor(private router: Router, private productService : ProductService, private route: ActivatedRoute,) { }
+  constructor(private router: Router, private productService : ProductService, private route: ActivatedRoute, private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
@@ -20,26 +20,16 @@ export class ProductComponent implements OnInit {
     this.getProduct(this.productId);
     console.log("",this.productId);
     });
-    this.game = {
-      image : "../../../assets/munchkin.svg",
-      name : "Munchkin",
-      descr : "Um jogo de cartas onde as suas maiores armas são trapacear e tirar sarro dos adversários.",
-      type : "MAIS VENDIDO",
-      color : "#729290",
-      age: 10,
-      linguage:"Português",
-      time: 60,
-      players:"3 - 6",
-      priceRent: "20,00",
-      priceNew: "120,00",
-      priceBuy: "60,00",
-      history:"Entre na Dungeon e explore seus mistérios! Abra portas secretas e mate todos os monstros que cruzarem seu caminho. Trapaceie seus colegas. Pegue todo o tesouro para você e saia correndo. Seja sincero: Você adora isso!",
-      component: "95 Cartas de Porta/Dungeon 73 Cartas de Tesouro 1 Dado de 6 lados personalizado 1 Livro de Regras"
-    }
   }
 
   getProduct(id : any){
-    this.productService.getProductById(id);
+    this.productService.getProductById(id).subscribe( resp =>{
+      if(resp.success){
+        this.game = resp.payload;
+        this.game.imageFile = this.sanitizer.bypassSecurityTrustUrl(`data:image/png;base64, ${resp.payload.imageFile}`);
+      }
+    });
+  
   }
 
 }

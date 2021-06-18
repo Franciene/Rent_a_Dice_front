@@ -1,6 +1,6 @@
 <div class="container-geral">
     <div class="container-image">
-        <img src={{game.image}}>
+        <img [src]="game.imageFile">
     </div>
     <div >
         <div class="container-infos">
@@ -14,7 +14,7 @@
        </div> 
        <div>
            <p class="text-game title">{{game.name}}</p>
-           <p class="text-game">{{game.descr}}</p>
+           <p class="text-game">{{game.desc}}</p>
        </div>
        <div class="box-infos">
            <div class="age box">
@@ -23,15 +23,15 @@
            </div>
            <div class="players box">
             <img class="icons-game" src="../../../assets/players.svg">
-            <p>{{game.players}}</p>
+            <p>{{game.amountPlayers}}</p>
            </div>
            <div class="time box">
             <img class="icons-game" src="../../../assets/clock.svg">
-            <p>{{game.time}}'</p>
+            <p>{{game.timePlay}}'</p>
            </div>
            <div class="linguage box">
             <img class="icons-game" src="../../../assets/book.svg">
-            <p>{{game.linguage}}</p>
+            <p>Português</p>
            </div>
            <div class = "options-game">
             <div>
@@ -60,7 +60,7 @@
     <div class="container-manual">
         <p class="text-game title descr">Componentes</p>
         <hr style="background-color: rgba(69, 69, 69, 0.5);">
-        <p class="text-game text-min">{{game.component}}</p>
+        <p class="text-game text-min">{{game.components}}</p>
     </div>
 </div>
 
