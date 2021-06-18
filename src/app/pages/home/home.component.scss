@@ -1,0 +1,201 @@
+html{
+    font-family: 'Open Sans';
+}
+
+.container-geral{
+    display: flex;
+    flex-direction: column;
+}
+
+.container1{
+    position: relative;
+}
+
+.container-2{
+    &.top{
+        margin-top: 80vh;
+    }
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-box{
+    position: absolute;
+    width: 100%;
+    margin: 15px auto 0;
+    height: 72vh;
+    background: url("../../../assets/inicial_1.svg") no-repeat center center; 
+    background-size: cover;
+}
+
+.container-box-itens{
+    margin-top: 20vh;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.container2 {
+    margin: auto 20px;
+}
+
+.container2-image {
+    // position: absolute;
+    width: 100%;
+    height: 45vh;
+    background: url("../../../assets/inicial_2.svg") no-repeat center center; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2-text {
+    display: flex;
+    flex-direction: column;
+    // position: absolute;
+}
+
+.container3{
+    // position: absolute;
+    display: flex;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.container3-image {
+    width: 45%;
+    height: 40vh;
+    background: url("../../../assets/inicial_3.svg") no-repeat center center; 
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    margin-right: 8px;
+    flex-direction: column;
+    
+}
+
+.container3-image2 {
+    width: 45%;
+    height: 40vh;
+    background: url("../../../assets/inicial_4.svg") no-repeat center center; 
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 8px;
+    flex-direction: column;
+}
+
+.container4{
+    // position: absolute;
+    display: flex;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.container4-image {
+    width: 45%;
+    height: 40vh;
+    background: url("../../../assets/inicial_4.svg") no-repeat center center; 
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    margin-right: 8px;
+    flex-direction: column;
+    
+}
+
+.container4-image2 {
+    width: 45%;
+    height: 40vh;
+    background: url("../../../assets/inicial_5.svg") no-repeat center center; 
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 8px;
+    flex-direction: column;
+}
+
+.text-align3 {
+    padding: 0 0 28px 25px;
+}
+
+.container-3 {
+    margin: 8vh auto;
+    display: flex;
+    justify-content: center;
+} 
+
+.title{
+    &.center{
+        justify-content: center;
+        font-size: 40px;
+        line-height: 54px;
+    }
+    &.sub{
+        font-size: 24px;
+        width: 400px;
+        font-weight: lighter;
+        line-height: 30px;
+
+    }
+    &.sub2{
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+    }
+    &.sub3{
+        font-size: 24px;
+        line-height: 33px;
+        width: 400px;
+    }
+    &.black{
+        color: black;
+        text-align: center;
+        justify-content: center;
+        &.all{
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 18px;
+            line-height: 20px;
+            color: rgba(104, 104, 104, 0.9);
+            margin-bottom: 40px;
+        }
+    }
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 74px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+
+.more{
+    cursor: pointer;
+    width: 194px;
+    height: 50px;
+    background: #F26522;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+}

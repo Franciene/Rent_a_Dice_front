@@ -1,0 +1,66 @@
+<div class="container-geral">
+    <div class="container-image">
+        <img src={{game.image}}>
+    </div>
+    <div >
+        <div class="container-infos">
+            <img class="icon-star" src="../../../assets/stars.svg">
+            <p class="text-star">5,0 (41)</p>
+            <div class="bolinha" [ngStyle]="{
+             'background': game.color 
+           }">
+           <p>{{game.type}}</p>
+        </div>
+       </div> 
+       <div>
+           <p class="text-game title">{{game.name}}</p>
+           <p class="text-game">{{game.descr}}</p>
+       </div>
+       <div class="box-infos">
+           <div class="age box">
+               <p>{{game.age}}+</p>
+               <p>ANOS</p>
+           </div>
+           <div class="players box">
+            <img class="icons-game" src="../../../assets/players.svg">
+            <p>{{game.players}}</p>
+           </div>
+           <div class="time box">
+            <img class="icons-game" src="../../../assets/clock.svg">
+            <p>{{game.time}}'</p>
+           </div>
+           <div class="linguage box">
+            <img class="icons-game" src="../../../assets/book.svg">
+            <p>{{game.linguage}}</p>
+           </div>
+           <div class = "options-game">
+            <div>
+                <button class="option">ALUGAR</button>
+                <button class="value"> R$  {{game.priceRent}}</button>
+            </div>
+            <div>
+                <button class="option new">COMPRAR</button>
+                <button class="value new">R$  {{game.priceNew}}</button>
+            </div>
+            <div class="option-value ">
+                <button class="option buy">COMPRAR USADO</button>
+                <button class="value buy">R$  {{game.priceBuy}}</button>
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+<hr style="background-color: rgba(69, 69, 69, 0.5);">
+<div class="container-deitals">
+    <div class="container-manual">
+        <p class="text-game title descr">Descrição</p>
+        <hr style="background-color: rgba(69, 69, 69, 0.5);">
+        <p class="text-game text-min">{{game.history}}</p>
+    </div>
+    <div class="container-manual">
+        <p class="text-game title descr">Componentes</p>
+        <hr style="background-color: rgba(69, 69, 69, 0.5);">
+        <p class="text-game text-min">{{game.component}}</p>
+    </div>
+</div>
+

@@ -1,0 +1,45 @@
+<div class="container-geral">
+    <div class="container-primary">
+        <div class="container-personal">
+            <img class="image" src="../../../assets/user.png">
+            <div class="info-personal">
+                <p class="text title">{{user[0].nome}}</p>
+                <p class="text info">{{user[0].email}}</p>
+                <p class="text info">Senha: ********</p>
+                <button class="btn">Editar Dados</button>
+            </div>
+        </div>
+
+        <div class="info-personal plan">
+            <div class="container-personal ">
+                <div class="container-personal plan">
+                    <p class="text title">Plano</p>
+                    <p class="text info">Plano Prata</p>
+                </div>
+                <div class="container-personal image">
+                    <img src="../../../assets/plan_prata.svg">
+                </div>
+            </div>
+            <span class="text info">Resta : <span class="text info color">12 dias e 1 jogo</span></span>
+            <button class="btn">Renovar</button>
+        </div>
+    </div>
+    <div class= "container-games">
+        <p class="text title play">Já jogados</p>
+        <div class="container-play">
+            <div class="games-play" *ngFor="let game of listGames">
+                <img class = "image-game" src={{game.image}}>
+                <p class="text game">{{game.name}}</p>
+            </div>
+        </div>
+        <p class="text title to-play">Recomendações</p>
+        <div class="container-play">
+            <div class="games-play" *ngFor="let game of listToPlay">
+                <img class = "image-game" src={{game.image}}>
+                <p class="text game">{{game.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

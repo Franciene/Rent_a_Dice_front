@@ -1,0 +1,16 @@
+<div style="border: 1px solid rgba(140, 140, 140, 0.5); padding: 15px 0 20px; display: flex; justify-content: center;" >
+    <div class="nav-menu">
+        <img class = "logo" src='../../../assets/logo.svg'  routerLink="/home">
+        <span class = "item-menu" routerLink="/catalog">Catálogo</span>
+        <span class = "item-menu">Lançamentos</span>
+        <span class = "item-menu" routerLink="/plans">Planos</span>
+        <span class = "item-menu">Vender jogo</span>
+        <span class = "item-menu">FAQ</span>
+        <div>
+            <input style="height: 23px;"type = "text" placeholder="Pesquisar">
+            <img style="margin-left: 4px; height: 20px;"src='../../../assets/lupa.svg' >
+        </div>
+        <img class = "item-img" src='../../../assets/carrinho.svg'>
+        <img class = "item-img" src='../../../assets/user.svg' (click)="userLogado()">
+    </div>
+</div>

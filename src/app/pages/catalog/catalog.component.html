@@ -1,0 +1,18 @@
+<div class="container-games">
+    <div class=" list-games">
+        <!-- <img [src]="imageSource" alt="Image Source"> -->
+        <div class="info-games" *ngFor = "let product of listProduct;">
+            <div class = "game">
+                <div class="bolinha" [ngStyle]="{
+                    'background': product.color 
+                  }">
+                  <p>{{product.type}}</p>
+                </div>
+                <img [src]="product.image" width="255px" height="277px">
+                <p class="text-title">{{product.name}}</p>
+                <p class="text-info">{{product.desc}}</p>
+                <button class="more" routerLink="/product/123">Saiba mais</button>
+            </div>
+        </div>
+    </div>
+</div>

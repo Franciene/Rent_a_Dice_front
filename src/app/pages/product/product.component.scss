@@ -1,0 +1,144 @@
+.container-geral{
+    display: flex;
+    width: 100%;
+    height: min-content;
+    justify-content: center;
+    margin: 50px 0 10px;
+}
+
+.container-image{
+    margin-right: 50px;
+
+}
+
+.container-infos{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid rgba(196, 196, 196, 0.9);
+    box-sizing: border-box;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right:10px;
+}
+
+.box-infos{
+    width: 600px;
+    margin: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.bolinha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 75px;
+    height: 80px;
+    font-size: 11px;
+    color: white;
+    word-wrap: break-all;
+    text-align: center;
+}
+
+.text-star{
+    margin-top: 11px;
+    margin-right: 250px;
+    margin-left: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #454545;
+}
+
+.text-game{  
+    &.title{
+        font-weight: bold;
+        font-size: 34px;
+        margin: 20px 0;
+    }
+    &.descr{
+        margin-bottom: 15px;
+    }
+    &.text-min{
+        font-size: 18px;
+    }
+    width: 400px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    color: #454545;
+
+}
+
+.options-game{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.option-value{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.option{
+    cursor: pointer;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background: #F26522;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    margin: 10px 2px;
+}
+
+.value{
+    cursor: pointer;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: #F26522;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    margin: 10px 1px;
+}
+
+.new{
+    background: #729290;
+}
+
+.buy{
+    background: #E6C48E;
+}
+
+.container-deitals{
+    display: flex;
+    justify-content: center;
+}
+
+.container-manual{
+    margin: 20px 60px;
+    align-items: center;
+}
